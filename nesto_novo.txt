@@ -1,1 +1,2 @@
 "Dodavame nesto korisno za developement" 
+"Dodavame uste nesto" 
