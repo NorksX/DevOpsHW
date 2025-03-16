@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: borismanev/composeapp
+    command: python app.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/composeapp
+  redis:
+    image: redis
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
